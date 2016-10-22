@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Multiplication with closure</title>
+	</head>
+	<body>
+	<script>
+		function multiplication (x){
+		return function (y){
+		return x*y;
+			};
+		}
+		var a=multiplication(67);
+		var b=multiplication(45);
+		console.log(a(34)); 
+		console.log(b(87));
+	</script>
+	</body>
+</html>
